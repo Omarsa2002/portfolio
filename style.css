@@ -54,7 +54,7 @@ body {
     color: white;
     display: flex;
     justify-content: space-around;
-    /* background-color: #080808; */
+    /* background-color: #222222c9; */
     background-color: rgba(0, 0, 0, 0.584);
     backdrop-filter: blur(10px);
     padding: 20px 0px 20px;
@@ -142,7 +142,7 @@ span {
 .home-section {
     margin-top: -100px;
     padding-top: 100px;
-    
+    background-color: #222222c9;
 }
 
 .list-group {
@@ -251,6 +251,7 @@ span {
     font-weight: 700;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+    margin-top: 20px;
 }
 
 .btn-hire:hover {
@@ -308,6 +309,7 @@ span {
     }
 }
 .btn-project {
+    margin-top: 20px;
     text-decoration: none;
     color: #080808;
     background-color: var(--main-color);
@@ -327,7 +329,6 @@ span {
 .container-about {
     /* padding-bottom: 0px; */
     background-color:#222222c9;
-    padding-top: 100px;
 }
 
 .aboutUs-section {
@@ -357,6 +358,9 @@ span {
 
 .aboutUs-section p {
     font-size: 1.2rem;
+}
+.place{
+    font-size: small;
 }
 
 @media (max-width: 1200px) {
@@ -452,9 +456,11 @@ span {
 /* Skills Section */
 #skills {
     text-align: center;
-    padding: 50px;
+    padding: 90px 50px 50px 50px;
     color: #fff;
     width: 50%;
+    background-color: #222222c9;
+
 }
 /* Skills List */
 .skills-list li {
@@ -651,9 +657,79 @@ span {
 
 
 
+#Reachout{
+    margin-top: 50px;
+    text-align: center;
+}
 
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #222222c9; /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
 
+.form-group {
+    margin-bottom: 1.5rem;
+}
 
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff; /* White text for labels */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #444; /* Darker input background */
+    color: #fff; /* Light text color */
+    border: 1px solid #555; /* Border that blends with dark background */
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #1E90FF; /* Highlight input when focused */
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #1E90FF; /* Button background */
+    color: white; /* Button text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0D6EFD; /* Slightly lighter hover effect */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #1E90FF; /* Button focus shadow */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #bbb; /* Light placeholder text */
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 1rem;
+}
+
+form {
+    color: #fff; /* Default text color for form */
+}
 
 
 
@@ -661,7 +737,6 @@ span {
 
 
 .footer {
-    /* background-color: var(--bg-color); */
     padding: 40px 20px 10px;
     margin-top: 20px;
 }

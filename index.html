@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Mabrouk | Junior Node.js Developer</title>
+    <title>Omar Mabrouk</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
@@ -18,7 +18,7 @@
     <header class="header">
         <div class="style-header">
             <div class="logo">
-                <a class="link-logo" href="/">
+                <a class="link-logo" href="https://omarsa2002.github.io/portfolio">
                     Omar <span>Mabrouk</span>
                 </a>
             </div>
@@ -29,6 +29,9 @@
                     </div>
                     <div>
                         <a class="links-header" href="#about">About</a>
+                    </div>
+                    <div>
+                        <a class="links-header" href="#skills">Skills</a>
                     </div>
                     <div>
                         <a class="links-header" href="#services">Services</a>
@@ -99,7 +102,6 @@
 
         <section class=" container-about " id="about">
             <div class="aboutUs-section container ">
-                <img class="image" src="./image/me-Photoroom.png" alt>
                 <div class="about-me">
                     <h2>About <span>Me</span></h2>
                     <div>
@@ -107,7 +109,9 @@
                             <div class=" first-gap align-items-start">
                                 <p class="fs-6 first-width">
                                     2020-2024<br />
-                                    Port-Said<br class="br" />,Egypt
+                                    <span class="place">
+                                        Port-Said<br class="br" />,Egypt
+                                    </span>
                                 </p>
                                 <p>
                                     I am a graduate of the Faculty of Management Technology and
@@ -124,7 +128,9 @@
                             <div class="mb-1 second-gap align-items-start">
                                 <p class="fs-6  second-width ">
                                     2021-2022<br />
-                                    alexandria ,Egypt
+                                    <span class="place">
+                                        alexandria ,Egypt
+                                    </span>
                                 </p>
                                 <p>
                                     I participated in 
@@ -151,38 +157,43 @@
                                     </a>
                                 </p>
                             </div>
-                            <div class="skills-container mt-3">
-                            <h3>My Skills</h3>
-                            <div>
-                                <h4>Technical Skills:</h4>
-                                <ul class="skills-list">
-                                    <li>Programming Languages: C++, JavaScript</li>
-                                    <li>Backend Technologies: Node.js, Express.js</li>
-                                    <li>Frontend Technologies: React.js, HTML, CSS</li>
-                                    <li>Databases: MongoDB, Mongoose</li>
-                                    <li>API Development: RESTful APIs, CRUD Operations</li>
-                                    <li>Version Control: Git, GitHub</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>Soft Skills:</h4>
-                                <ul class="skills-list">
-                                    <li>Problem-solving: Resolves coding challenges efficiently.</li>
-                                    <li>Time Management: Balances multiple projects, delivering on time.</li>
-                                    <li>Teamwork: Effective collaboration with cross-functional teams.</li>
-                                    <li>Adaptability: Quickly adapts to new technologies and evolving requirements.</li>
-                                </ul>
-                            </div>
+
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+        
 
     </main>
     <!-- Main Content -->
     <div class="content">
-        
+        <section id="skills">
+            <div class="skills-container mt-3">
+                <h3>My Skills</h3>
+                <div>
+                    <h4>Technical Skills:</h4>
+                    <ul class="skills-list">
+                        <li>Programming Languages: C++, JavaScript</li>
+                        <li>Backend Technologies: Node.js, Express.js</li>
+                        <li>Frontend Technologies: React.js, HTML, CSS</li>
+                        <li>Databases: MongoDB, Mongoose</li>
+                        <li>API Development: RESTful APIs, CRUD Operations</li>
+                        <li>Version Control: Git, GitHub</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Soft Skills:</h4>
+                    <ul class="skills-list">
+                        <li>Problem-solving: Resolves coding challenges efficiently.</li>
+                        <li>Time Management: Balances multiple projects, delivering on time.</li>
+                        <li>Teamwork: Effective collaboration with cross-functional teams.</li>
+                        <li>Adaptability: Quickly adapts to new technologies and evolving requirements.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section id="services">
             <h2>Services</h2>
             <div class="service-list">
@@ -226,7 +237,24 @@
         </section>
 
     </div>
-
+    <section id="Reachout">
+        <h2>Reach out</h2>
+        <form action="https://formspree.io/f/mzzbpkpd" method="POST" >
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea name="message" id="message" rows="4" required placeholder="Enter your message"></textarea>
+            </div>
+            <button class="btn-project">Send</button>
+        </form>
+    </section>
 
     <footer class="footer">
         <div class="social-icons">
@@ -266,14 +294,16 @@
             <li><a href="#projects">Projects</a></li>
         </ul>
         <p class="copyright">
-            Omar | All Rights Reserved
+            Omar ®
+            <!-- | All Rights Reserved -->
         </p>
     </footer>
     
     <!-- Three.js Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
     <!-- Add this div before the closing body tag -->
-    <div class="spacer"></div>
+    <!-- <div class="spacer"></div> -->
 </body>
 </html>
